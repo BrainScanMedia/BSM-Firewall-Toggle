@@ -51,7 +51,9 @@ sudo dnf install python3-gobject gtk4 librsvg2
 
 ```bash
 curl -O https://raw.githubusercontent.com/BrainScanMedia/BSM-Firewall-Toggle/main/bsm_firewall_toggle.py
-chmod +x bsm_firewall_toggle.py
+curl -O https://raw.githubusercontent.com/BrainScanMedia/BSM-Firewall-Toggle/main/bsm_firewall_toggle_uninstall.sh
+curl -O https://raw.githubusercontent.com/BrainScanMedia/BSM-Firewall-Toggle/main/icon.svg
+chmod +x bsm_firewall_toggle.py bsm_firewall_toggle_uninstall.sh
 ```
 
 ### 3. Run it
