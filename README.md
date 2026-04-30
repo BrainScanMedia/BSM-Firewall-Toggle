@@ -124,8 +124,6 @@ All privileged commands are batched into a single shell script and executed with
 
 **BrainScanMedia.com, Inc.** — [https://www.brainscanmedia.com](https://www.brainscanmedia.com)
 
-Parker, Colorado
-
 ---
 
 ## Contributing
