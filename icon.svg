@@ -1,0 +1,17 @@
+<svg width="100%" viewBox="0 0 680 380" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>BSM Firewall Toggle Shield Icon</title>
+  <desc>Blue and green shield with lock and BSM text for BrainScanMedia</desc>
+
+  <path d="M340 40 L460 88 L460 200 C460 290 406 340 340 360 C274 340 220 290 220 200 L220 88 Z" fill="#1c6cbf"/>
+  <path d="M340 64 L444 106 L444 200 C444 278 396 322 340 340 C284 322 236 278 236 200 L236 106 Z" fill="#2ea043"/>
+  <path d="M340 64 L444 106 L444 160 C420 140 380 128 340 124 L340 64 Z" fill="#3fb950" opacity="0.4"/>
+
+  <path d="M322 152 L322 134 C322 112 358 112 358 134 L358 152"
+        fill="none" stroke="white" stroke-width="9" stroke-linecap="round"/>
+  <rect x="310" y="150" width="60" height="44" rx="8" fill="white"/>
+  <circle cx="340" cy="170" r="6" fill="#2ea043"/>
+  <rect x="336" y="170" width="8" height="11" rx="3" fill="#2ea043"/>
+
+  <text x="340" y="252" font-family="monospace" font-size="52" font-weight="bold"
+        fill="white" text-anchor="middle" dominant-baseline="central" letter-spacing="2">BSM</text>
+</svg>
