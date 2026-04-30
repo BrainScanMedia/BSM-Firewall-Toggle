@@ -125,11 +125,26 @@ All privileged commands are batched into a single shell script and executed with
 To remove BSM Firewall Toggle from your system:
 
 ```bash
-chmod +x uninstall.sh
-./uninstall.sh
+chmod +x bsm_firewall_toggle_uninstall.sh
+./bsm_firewall_toggle_uninstall.sh
 ```
 
 This removes the app, desktop entry, and icon.
+
+**Or manually via terminal:**
+
+```bash
+# Remove the app
+sudo rm -f /usr/local/bin/bsm_firewall_toggle.py
+
+# Remove the desktop entry
+sudo rm -f /usr/share/applications/bsm-firewall-toggle.desktop
+sudo update-desktop-database /usr/share/applications/
+
+# Remove the icon
+sudo rm -f /usr/share/icons/hicolor/scalable/apps/bsm-firewall-toggle.svg
+sudo gtk-update-icon-cache /usr/share/icons/hicolor/
+```
 
 ---
 
