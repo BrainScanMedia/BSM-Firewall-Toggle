@@ -50,6 +50,7 @@ sudo dnf install python3-gobject gtk4 librsvg2
 ### 2. Download the script
 
 ```bash
+cd ~
 curl -O https://raw.githubusercontent.com/BrainScanMedia/BSM-Firewall-Toggle/main/bsm_firewall_toggle.py
 curl -O https://raw.githubusercontent.com/BrainScanMedia/BSM-Firewall-Toggle/main/bsm_firewall_toggle_uninstall.sh
 chmod +x bsm_firewall_toggle.py bsm_firewall_toggle_uninstall.sh
@@ -79,7 +80,7 @@ To make it launchable from GNOME like a regular app:
 ```bash
 # Download and install the icon
 sudo mkdir -p /usr/share/icons/hicolor/scalable/apps
-curl -o /usr/share/icons/hicolor/scalable/apps/bsm-firewall-toggle.svg https://raw.githubusercontent.com/BrainScanMedia/BSM-Firewall-Toggle/main/icon.svg
+sudo curl -o /usr/share/icons/hicolor/scalable/apps/bsm-firewall-toggle.svg https://raw.githubusercontent.com/BrainScanMedia/BSM-Firewall-Toggle/main/icon.svg
 sudo gtk-update-icon-cache /usr/share/icons/hicolor/
 
 # Copy script to system bin
