@@ -76,6 +76,11 @@ This lets you launch it like any other app without opening a terminal.
 To make it launchable from GNOME like a regular app:
 
 ```bash
+# Install the icon
+sudo mkdir -p /usr/share/icons/hicolor/scalable/apps
+sudo cp icon.svg /usr/share/icons/hicolor/scalable/apps/bsm-firewall-toggle.svg
+sudo gtk-update-icon-cache /usr/share/icons/hicolor/
+
 # Copy script to system bin
 sudo cp bsm_firewall_toggle.py /usr/local/bin/bsm_firewall_toggle.py
 sudo chmod +x /usr/local/bin/bsm_firewall_toggle.py
@@ -83,10 +88,10 @@ sudo chmod +x /usr/local/bin/bsm_firewall_toggle.py
 # Create desktop entry
 sudo tee /usr/share/applications/bsm-firewall-toggle.desktop > /dev/null <<DESK
 [Desktop Entry]
-Name=BSM Firewall Toggle
+Name=Firewall Toggle
 Comment=Simple one-switch firewall control
 Exec=/usr/local/bin/bsm_firewall_toggle.py
-Icon=security-high
+Icon=/usr/share/icons/hicolor/scalable/apps/bsm-firewall-toggle.svg
 Terminal=false
 Type=Application
 Categories=System;Security;Network;
