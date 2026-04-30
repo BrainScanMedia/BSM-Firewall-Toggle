@@ -120,9 +120,23 @@ All privileged commands are batched into a single shell script and executed with
 
 ---
 
+## Uninstall
+
+To remove BSM Firewall Toggle from your system:
+
+```bash
+chmod +x uninstall.sh
+./uninstall.sh
+```
+
+This removes the app, desktop entry, and icon.
+
+---
+
 ## Developer
 
 **BrainScanMedia.com, Inc.** — [https://www.brainscanmedia.com](https://www.brainscanmedia.com)
+
 
 ---
 
