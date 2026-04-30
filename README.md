@@ -83,14 +83,14 @@ sudo gtk-update-icon-cache /usr/share/icons/hicolor/
 
 # Copy script to system bin
 sudo cp bsm_firewall_toggle.py /usr/local/bin/bsm_firewall_toggle.py
-sudo chmod +x /usr/local/bin/bsm_firewall_toggle.py
+sudo chmod 755 /usr/local/bin/bsm_firewall_toggle.py
 
 # Create desktop entry
 sudo tee /usr/share/applications/bsm-firewall-toggle.desktop > /dev/null <<DESK
 [Desktop Entry]
 Name=Firewall Toggle
 Comment=Simple one-switch firewall control
-Exec=/usr/local/bin/bsm_firewall_toggle.py
+Exec=python3 /usr/local/bin/bsm_firewall_toggle.py
 Icon=/usr/share/icons/hicolor/scalable/apps/bsm-firewall-toggle.svg
 Terminal=false
 Type=Application
